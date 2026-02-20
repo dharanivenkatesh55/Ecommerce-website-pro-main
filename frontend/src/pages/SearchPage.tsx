@@ -59,7 +59,7 @@ const SearchPage: React.FC = () => {
                                 <Link to={`/product/${product.id}`} className="block">
                                     <div className="relative aspect-[3/4] overflow-hidden rounded-3xl bg-gray-100 mb-6 group-hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2">
                                         <img
-                                            src={product.main_image ? `https://ecommerce-website-pro-backend.onrender.com${product.main_image}` : 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80'}
+                                            src={product.main_image ? `https://ecommerce-website-pro-main.onrender.com${product.main_image}` : 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80'}
                                             alt={product.name}
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                         />

@@ -11,7 +11,7 @@ const filesToFix = [
 ];
 
 const targetUrl = 'http://localhost:5000';
-const replacement = 'https://ecommerce-website-pro-backend.onrender.com';
+const replacement = 'https://ecommerce-website-pro-main.onrender.com';
 
 filesToFix.forEach(relPath => {
     const absPath = path.resolve(__dirname, relPath);

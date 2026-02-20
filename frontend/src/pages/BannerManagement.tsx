@@ -111,7 +111,7 @@ const BannerManagement: React.FC = () => {
                             <div key={offer.id} className="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden group">
                                 <div className="flex flex-col md:flex-row">
                                     <div className="w-full md:w-48 h-48 md:h-auto overflow-hidden">
-                                        <img src={`https://ecommerce-website-pro-backend.onrender.com${offer.image_url}`} alt={offer.title} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
+                                        <img src={`https://ecommerce-website-pro-main.onrender.com${offer.image_url}`} alt={offer.title} className="w-full h-full object-cover transition duration-500 group-hover:scale-110" />
                                     </div>
                                     <div className="p-6 flex-grow flex flex-col justify-between">
                                         <div>

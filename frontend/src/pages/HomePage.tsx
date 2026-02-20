@@ -69,7 +69,7 @@ const HomePage: React.FC = () => {
             <section className="relative h-[500px] md:h-[600px] flex items-center overflow-hidden bg-gray-900 text-white">
                 {activeOffer ? (
                     <img
-                        src={`https://ecommerce-website-pro-backend.onrender.com${activeOffer.image_url}`}
+                        src={`https://ecommerce-website-pro-main.onrender.com${activeOffer.image_url}`}
                         alt={activeOffer.title}
                         className="absolute inset-0 w-full h-full object-cover opacity-40 z-0"
                     />
@@ -151,7 +151,7 @@ const HomePage: React.FC = () => {
                                     <Link to={`/product/${product.id}`} className="block">
                                         <div className="relative aspect-[3/4] overflow-hidden rounded-3xl bg-gray-100 mb-6 group-hover:shadow-2xl transition-all duration-500 transform group-hover:-translate-y-2">
                                             <img
-                                                src={product.main_image ? `https://ecommerce-website-pro-backend.onrender.com${product.main_image}` : 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80'}
+                                                src={product.main_image ? `https://ecommerce-website-pro-main.onrender.com${product.main_image}` : 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80'}
                                                 alt={product.name}
                                                 loading="lazy"
                                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
