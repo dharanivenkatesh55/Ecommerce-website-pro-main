@@ -1,0 +1,174 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "description": "Gadgets, phones, laptops and more",
+      "created_at": "2026-02-19T03:29:02.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Fashion",
+      "description": "Clothing, shoes and accessories",
+      "created_at": "2026-02-19T03:29:02.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Home & Decor",
+      "description": "Furniture, lighting and home improvements",
+      "created_at": "2026-02-19T03:29:02.000Z"
+    },
+    {
+      "id": 6,
+      "name": "Accessories",
+      "description": null,
+      "created_at": "2026-02-19T06:13:58.000Z"
+    },
+    {
+      "id": 7,
+      "name": "Women centric Fashion",
+      "description": "dress and bags\n",
+      "created_at": "2026-02-19T06:59:07.000Z"
+    },
+    {
+      "id": 8,
+      "name": "Men Centric",
+      "description": "",
+      "created_at": "2026-02-19T07:16:15.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "kurti",
+      "category_id": 2,
+      "category_name": "Fashion"
+    },
+    {
+      "id": 2,
+      "name": "kid kurta",
+      "category_id": 2,
+      "category_name": "Fashion"
+    },
+    {
+      "id": 3,
+      "name": "women saree",
+      "category_id": 2,
+      "category_name": "Fashion"
+    },
+    {
+      "id": 4,
+      "name": "Women's  Embroidered Cotton Chudidar Set",
+      "category_id": 2,
+      "category_name": "Fashion"
+    },
+    {
+      "id": 5,
+      "name": "Women's Royal Bridal Silk Lehenga Choli ",
+      "category_id": 2,
+      "category_name": "Fashion"
+    },
+    {
+      "id": 6,
+      "name": "Men's Classic  Pullover Hoodi + jeans",
+      "category_id": 2,
+      "category_name": "Fashion"
+    },
+    {
+      "id": 8,
+      "name": "Premium Leather Watch",
+      "category_id": 6,
+      "category_name": "Accessories"
+    },
+    {
+      "id": 9,
+      "name": "Men T shirt",
+      "category_id": 2,
+      "category_name": "Fashion"
+    },
+    {
+      "id": 11,
+      "name": "Asethitic home decor",
+      "category_id": 3,
+      "category_name": "Home & Decor"
+    },
+    {
+      "id": 17,
+      "name": "Brand New Mobile with Headset",
+      "category_id": 1,
+      "category_name": "Electronics"
+    },
+    {
+      "id": 18,
+      "name": "Two Panel Painting Of Palm Plant",
+      "category_id": 3,
+      "category_name": "Home & Decor"
+    },
+    {
+      "id": 19,
+      "name": "Beautifull Hall decor",
+      "category_id": 3,
+      "category_name": "Home & Decor"
+    },
+    {
+      "id": 20,
+      "name": "Asethitic home decor",
+      "category_id": 3,
+      "category_name": "Home & Decor"
+    },
+    {
+      "id": 21,
+      "name": "Frame",
+      "category_id": 6,
+      "category_name": "Accessories"
+    },
+    {
+      "id": 22,
+      "name": "Brand New Mac",
+      "category_id": 1,
+      "category_name": "Electronics"
+    },
+    {
+      "id": 29,
+      "name": "women jean jacket",
+      "category_id": 7,
+      "category_name": "Women centric Fashion"
+    },
+    {
+      "id": 30,
+      "name": "Jean skirt",
+      "category_id": 7,
+      "category_name": "Women centric Fashion"
+    },
+    {
+      "id": 31,
+      "name": "Women gown",
+      "category_id": 7,
+      "category_name": "Women centric Fashion"
+    },
+    {
+      "id": 32,
+      "name": "Men formal",
+      "category_id": 8,
+      "category_name": "Men Centric"
+    },
+    {
+      "id": 33,
+      "name": "Suit",
+      "category_id": 8,
+      "category_name": "Men Centric"
+    },
+    {
+      "id": 34,
+      "name": "Men pant",
+      "category_id": 8,
+      "category_name": "Men Centric"
+    },
+    {
+      "id": 35,
+      "name": "women handbag",
+      "category_id": 7,
+      "category_name": "Women centric Fashion"
+    }
+  ]
+}

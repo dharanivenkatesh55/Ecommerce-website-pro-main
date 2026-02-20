@@ -1,0 +1,28 @@
+### How to Import Your Database Schema in XAMPP (phpMyAdmin)
+
+Since you have already created the `ecommerce` database, follow these steps to create the tables:
+
+1. **Open the Schema File**:
+   - Open the content of `database/schema.sql`.
+   - Select All (Ctrl+A) and Copy (Ctrl+C).
+
+2. **Open phpMyAdmin**:
+   - Go to your browser and visit: [http://localhost/phpmyadmin](http://localhost/phpmyadmin)
+   - On the left sidebar, click on the database you created: **ecommerce**.
+
+3. **Open the SQL Tab**:
+   - Look at the tabs at the top of the screen (Structure, SQL, Search, Query, etc.).
+   - Click on the **SQL** tab.
+
+4. **Paste and Execute**:
+   - You will see a large white text box.
+   - **Paste** (Ctrl+V) the code you copied from `schema.sql` into this box.
+   - Click the **Go** button (usually at the bottom right or bottom left of the text box).
+
+### What happens next?
+- You will see a green success message.
+- If you click on **Structure** or the `ecommerce` database again, you will surely see your new tables: `users`, `products`, `categories`, etc.
+- You **do not** need to create table names manually. The code (`CREATE TABLE ...`) does that for you automatically.
+
+### Next Step
+Once you see the green success message, your database is ready! You can now start your backend server.
