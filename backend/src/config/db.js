@@ -8,12 +8,15 @@ const pool = mysql.createPool({
   host: process.env.DB_HOST || '127.0.0.1',
   user: process.env.DB_USER || 'root',
   password: process.env.DB_PASSWORD || '',
-  database: process.env.DB_NAME || 'ecommerce',
+  database: process.env.DB_NAME || 'defaultdb',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
   connectTimeout: 10000, // Increase timeout to 10s
-  family: 4 // Force IPv4
+  family: 4, // Force IPv4
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 const promisePool = pool.promise();
