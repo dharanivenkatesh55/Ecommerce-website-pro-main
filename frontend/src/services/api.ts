@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = "https://ecommerce-website-pro-backend.onrender.com/api";
+export const BASE_URL = "https://ecommerce-website-pro-backend.onrender.com";
+const API_URL = `${BASE_URL}/api`;
 
 const api = axios.create({
     baseURL: API_URL,

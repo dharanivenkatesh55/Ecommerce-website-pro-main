@@ -79,7 +79,7 @@ const ProductDetail: React.FC = () => {
                 <div className="space-y-6">
                     <div className="aspect-square bg-white rounded-[30px] md:rounded-[40px] overflow-hidden shadow-2xl border border-gray-100 p-6 md:p-8 flex items-center justify-center">
                         <img
-                            src={mainImage ? `http://localhost:5000${mainImage}` : 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1000&q=80'}
+                            src={mainImage ? `https://ecommerce-website-pro-backend.onrender.com${mainImage}` : 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1000&q=80'}
                             alt={product.name}
                             className="w-full h-full object-contain transform hover:scale-105 transition duration-700"
                         />
@@ -92,7 +92,7 @@ const ProductDetail: React.FC = () => {
                                     onClick={() => setMainImage(img)}
                                     className={`aspect-square rounded-2xl overflow-hidden cursor-pointer border-2 transition ${mainImage === img ? 'border-blue-600' : 'border-transparent hover:border-gray-200'}`}
                                 >
-                                    <img src={`http://localhost:5000${img}`} className="w-full h-full object-cover" />
+                                    <img src={`https://ecommerce-website-pro-backend.onrender.com${img}`} className="w-full h-full object-cover" />
                                 </div>
                             ))}
                         </div>

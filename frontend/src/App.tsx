@@ -251,7 +251,7 @@ function CartPage() {
             {cart.map(item => (
               <div key={item.id} className="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 flex items-center gap-6">
                 <div className="w-24 h-24 bg-gray-50 rounded-2xl overflow-hidden flex-shrink-0">
-                  <img src={`http://localhost:5000${item.image}`} alt={item.name} className="w-full h-full object-contain" />
+                  <img src={`https://ecommerce-website-pro-backend.onrender.com${item.image}`} alt={item.name} className="w-full h-full object-contain" />
                 </div>
                 <div className="flex-grow">
                   <p className="text-xs text-blue-600 font-bold uppercase tracking-widest mb-1">{item.brand}</p>
