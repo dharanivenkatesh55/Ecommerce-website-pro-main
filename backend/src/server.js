@@ -16,4 +16,15 @@ app.use('/api/orders', require('./routes/orderRoutes'));
 app.use('/api/reviews', require('./routes/reviewRoutes'));
 app.use('/api/cart', require('./routes/cartRoutes'));
 app.get('/', (req, res) => res.send('API is running...'));
-app.listen(PORT, () => console.log('Server running on port ' + PORT));
+
+// Test DB Connection
+const db = require('./config/db');
+db.query('SELECT 1')
+    .then(() => {
+        console.log('✅ Database connected successfully');
+        app.listen(PORT, () => console.log('Server running on port ' + PORT));
+    })
+    .catch(err => {
+        console.error('❌ Database connection failed:', err.message);
+        process.exit(1);
+    });
