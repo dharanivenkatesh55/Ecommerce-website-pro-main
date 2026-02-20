@@ -103,10 +103,18 @@ function App() {
                   <Link to="/about" onClick={() => setIsMenuOpen(false)} className="text-4xl font-black text-gray-900">About</Link>
                   <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="text-4xl font-black text-gray-900">Contact</Link>
                   <div className="pt-8 border-t border-gray-100 flex flex-col space-y-4">
-                    {isAdmin ? (
-                      <Link to="/admin" onClick={() => setIsMenuOpen(false)} className="block w-full py-5 bg-blue-600 text-white rounded-2xl text-center font-black text-xl shadow-xl shadow-blue-100">Dashboard</Link>
+                    {localStorage.getItem('token') ? (
+                      <>
+                        <Link to="/profile" onClick={() => setIsMenuOpen(false)} className="block w-full py-5 bg-blue-600 text-white rounded-2xl text-center font-black text-xl shadow-xl shadow-blue-100">My Profile</Link>
+                        {isAdmin && <Link to="/admin" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold text-gray-500 text-center">Admin Panel</Link>}
+                      </>
                     ) : (
-                      <Link to="/admin/login" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold text-gray-500">Admin Login</Link>
+                      <>
+                        <Link to="/login" onClick={() => setIsMenuOpen(false)} className="block w-full py-5 bg-blue-600 text-white rounded-2xl text-center font-black text-xl shadow-xl shadow-blue-100">Login</Link>
+                        <Link to="/register" onClick={() => setIsMenuOpen(false)} className="text-xl font-bold text-gray-500 text-center">Create Account</Link>
+                        <div className="h-4"></div>
+                        <Link to="/admin/login" onClick={() => setIsMenuOpen(false)} className="text-sm font-medium text-gray-400 text-center">Admin Access</Link>
+                      </>
                     )}
                   </div>
                 </nav>
